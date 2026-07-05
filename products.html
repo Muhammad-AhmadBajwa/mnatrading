@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products Catalog - MNA Trading</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Copy and replace the tailwind.config block with this updated logo-matching version -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#314861', // Exact steel dark blue from inner circle
+              light: '#425f7f',
+              dark: '#1f2e3e',   // Extra dark variant for header/footer backgrounds
+            },
+            accent: {
+              DEFAULT: '#269bb0', // Exact vivid teal from the logo's outer ring
+              light: '#3bc4dc',   // Brighter teal for hover effects
+              dark: '#1a6d7c',   // Deeper teal for button active states
+            },
+            slateGray: {
+              DEFAULT: '#64748b',
+              light: '#f8fafc',
+              dark: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slateGray-dark flex flex-col min-h-screen">
+
+  <!-- Premium Announcement Bar with New Tagline -->
+<div class="bg-accent text-white text-[11px] sm:text-xs font-bold tracking-widest py-2.5 px-4 text-center shadow-sm relative z-50 uppercase">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
+    <span>Sourcing Made Simple — One Supplier, Every Category</span>
+    <span class="hidden sm:inline-block text-white/40">|</span>
+    <a href="contact.html" class="inline-flex items-center gap-1 underline hover:text-primary-dark transition duration-150 group">
+      Get Wholesale Pricing 
+      <span class="inline-block transition-transform duration-150 group-hover:translate-x-0.5">→</span>
+    </a>
+  </div>
+</div>
+
+  <!-- Header / Navigation -->
+  <header class="bg-primary-dark text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="index.html" class="flex items-center space-x-3">
+            <!-- Increased height from h-14 to h-16 for a larger display -->
+            <img src="logo.png" alt="MNA Trading Logo" class="h-16 w-auto object-contain transition duration-200 hover:opacity-90">
+            <!-- Text brought back next to the logo -->
+            <span class="text-2xl font-extrabold tracking-wider text-white">MNA TRADING</span>
+          </a>
+        </div>
+        <!-- Desktop Nav Links -->
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="index.html" class="text-gray-300 hover:text-white px-1 py-2 transition duration-150">Home</a>
+          <a href="about.html" class="text-gray-300 hover:text-white px-1 py-2 transition duration-150">About Us</a>
+          <a href="products.html" class="text-accent-light border-b-2 border-accent-light px-1 py-2 transition duration-150">Products</a>
+          <a href="services.html" class="text-gray-300 hover:text-white px-1 py-2 transition duration-150">Services</a>
+          <a href="contact.html" class="text-gray-300 hover:text-white px-1 py-2 transition duration-150">Contact Us</a>
+        </nav>
+        <!-- Desktop CTA -->
+        <div class="hidden md:block">
+          <a href="contact.html" class="bg-accent hover:bg-accent-dark text-white px-5 py-2.5 rounded-md text-sm font-semibold transition duration-150 shadow-sm">
+            Get a Quote
+          </a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none" aria-label="Toggle navigation">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu, hidden by default -->
+    <div id="mobile-menu" class="hidden md:hidden bg-primary px-4 pt-2 pb-4 space-y-1 shadow-inner">
+      <a href="index.html" class="block text-gray-300 hover:text-white py-2">Home</a>
+      <a href="about.html" class="block text-gray-300 hover:text-white py-2">About Us</a>
+      <a href="products.html" class="block text-accent-light font-semibold py-2">Products</a>
+      <a href="services.html" class="block text-gray-300 hover:text-white py-2">Services</a>
+      <a href="contact.html" class="block text-gray-300 hover:text-white py-2">Contact Us</a>
+      <a href="contact.html" class="block bg-accent hover:bg-accent-dark text-white text-center py-2.5 rounded-md mt-4 font-semibold">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- Page Header Title Section -->
+  <section class="bg-primary text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Our Product Catalog</h1>
+      <p class="mt-2 text-base text-accent-light">A comprehensive range of wholesale products built around Pakistani market demands.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="flex-grow">
+    
+    <!-- Catalog Introduction -->
+    <section class="py-12 bg-white border-b border-slate-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-lg text-slateGray leading-relaxed">
+          MNA Trading offers a diverse range of products across four core categories, built to serve retailers, shopkeepers, and corporate buyers. Browse our categories below, or reach out for a custom order tailored to your needs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Product Categories Detailed Sections -->
+    <section class="py-16 space-y-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Category 1: Household & Consumer Goods -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-sm font-semibold uppercase tracking-wider text-accent">Category 01</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-primary-dark">Household & Consumer Goods</h2>
+            <p class="text-base text-slateGray leading-relaxed">
+              Everyday essentials used in homes and small businesses across Pakistan. Ideal for general stores, supermarkets, and retailers looking to stock reliable consumer products. We supply items that see consistent, everyday demand.
+            </p>
+            <div class="bg-slate-100 p-6 rounded-lg">
+              <h4 class="font-semibold text-primary mb-3">Key Supplies Offered:</h4>
+              <ul class="grid grid-cols-2 gap-2 text-sm text-slateGray font-medium">
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Kitchenware & utensils</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Cleaning supplies</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Storage & organization items</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Home essentials</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Plasticware</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Personal care items</li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:col-span-6">
+            <div class="rounded-lg overflow-hidden shadow-md">
+              <!-- AI Image Prompt: Premium household and plastic storage organizer items inside a clean, modern home setting, kitchen cabinet context, high quality, soft shadows -->
+              <img src="houshold.jpg" alt="MNA Trading Household Goods and Home Essentials" class="w-full h-auto rounded-xl object-cover max-h-[400px]">
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-20 border-slate-200" />
+
+        <!-- Category 2: Electronics Accessories -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 lg:order-2 space-y-6">
+            <span class="text-sm font-semibold uppercase tracking-wider text-accent">Category 02</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-primary-dark">Electronics Accessories</h2>
+            <p class="text-base text-slateGray leading-relaxed">
+              Practical accessories for mobile, computing, and general electronic device needs. Suited for tech retailers, mobile shops, and accessory resellers. We focus on in-demand items with steady turnover.
+            </p>
+            <div class="bg-slate-100 p-6 rounded-lg">
+              <h4 class="font-semibold text-primary mb-3">Key Supplies Offered:</h4>
+              <ul class="grid grid-cols-2 gap-2 text-sm text-slateGray font-medium">
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Mobile chargers & cables</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Earphones & headphones</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Power banks</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Phone cases & covers</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Adapters & connectors</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Small electronic gadgets</li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:col-span-6 lg:order-1">
+            <div class="rounded-lg overflow-hidden shadow-md">
+              <!-- AI Image Prompt: Minimalist high-tech showcase of mobile phone chargers, premium wireless headphones and braided cables, professional tech commercial photography -->
+              <img src="electronics.jpg" alt="Electronics Accessories and Gadgets" class="w-full h-auto object-cover max-h-[400px]">
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-20 border-slate-200" />
+
+        <!-- Category 3: Hardware & Industrial Supplies -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-sm font-semibold uppercase tracking-wider text-accent">Category 03</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-primary-dark">Hardware & Industrial Supplies</h2>
+            <p class="text-base text-slateGray leading-relaxed">
+              Tools and supplies for construction, maintenance, and light industrial use. Designed for hardware stores, contractors, and businesses needing dependable equipment. Chosen for durability and everyday utility.
+            </p>
+            <div class="bg-slate-100 p-6 rounded-lg">
+              <h4 class="font-semibold text-primary mb-3">Key Supplies Offered:</h4>
+              <ul class="grid grid-cols-2 gap-2 text-sm text-slateGray font-medium">
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Hand tools</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Fasteners & fittings</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Electrical hardware</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Plumbing supplies</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Safety equipment (PPE)</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Industrial consumables</li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:col-span-6">
+            <div class="rounded-lg overflow-hidden shadow-md">
+              <!-- AI Image Prompt: Organized layout of professional hardware tools, shiny steel nuts, bolts, wrench, and thick protective industrial gloves on a industrial concrete background -->
+              <img src="hardware.jpg" alt="Hardware & Industrial Supplies" class="w-full h-auto object-cover max-h-[400px]">
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-20 border-slate-200" />
+
+        <!-- Category 4: FMCG -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 lg:order-2 space-y-6">
+            <span class="text-sm font-semibold uppercase tracking-wider text-accent">Category 04</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-primary-dark">FMCG</h2>
+            <p class="text-base text-slateGray leading-relaxed">
+              Fast-moving consumer goods that keep retail shelves active. Suited for supermarkets, general stores, and distributors needing steady stock turnover. Known for consistent consumer demand.
+            </p>
+            <div class="bg-slate-100 p-6 rounded-lg">
+              <h4 class="font-semibold text-primary mb-3">Key Supplies Offered:</h4>
+              <ul class="grid grid-cols-2 gap-2 text-sm text-slateGray font-medium">
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Packaged food items</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Beverages</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Personal hygiene products</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Household consumables</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Snacks & confectionery</li>
+                <li class="flex items-center"><span class="w-2 h-2 bg-accent rounded-full mr-2"></span> Cleaning & laundry products</li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:col-span-6 lg:order-1">
+            <div class="rounded-lg overflow-hidden shadow-md">
+              <!-- AI Image Prompt: Nicely stacked shelves containing packaged foods, confectionery, juices, and household laundry products in a well-managed supermarket aisles setting -->
+              <img src="fmcg.jpg" alt="FMCG Stock Sourcing Solutions" class="w-full h-auto object-cover max-h-[400px]">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Custom Sourcing Prominent Notice -->
+    <section class="py-12 bg-white border-t border-slate-150">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-amber-50 border-l-4 border-accent p-8 rounded-r-lg shadow-sm">
+          <div class="flex items-start">
+            <div class="flex-shrink-0 text-accent">
+              <!-- Bulb icon -->
+              <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <div class="ml-4">
+              <h3 class="text-lg font-bold text-primary-dark">Can't find what you need?</h3>
+              <p class="mt-2 text-sm text-slateGray leading-relaxed font-medium">
+                Contact us for custom sourcing. We use our extensive network to find specific products according to your exact business requirements.
+              </p>
+              <div class="mt-4">
+                <a href="contact.html" class="inline-flex items-center text-sm font-bold text-accent hover:text-accent-dark transition">
+                  Request Custom Sourcing
+                  <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slateGray-dark text-gray-300 border-t border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <!-- Logo & Blurb -->
+        <div class="md:col-span-5 space-y-4">
+          <span class="text-xl font-bold tracking-wider text-white">MNA TRADING</span>
+          <p class="text-sm leading-relaxed text-gray-400">
+            MNA Trading — your reliable general order supplier in Lahore, connecting businesses to quality products across every essential category.
+          </p>
+          <p class="text-xs text-accent-light font-medium uppercase tracking-wider">
+            Trusted by retailers and businesses across Pakistan for reliable wholesale supply.
+          </p>
+        </div>
+        <!-- Quick Links -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="text-white font-semibold text-base">Navigation</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-accent-light transition duration-150">Home</a></li>
+            <li><a href="about.html" class="hover:text-accent-light transition duration-150">About Us</a></li>
+            <li><a href="products.html" class="hover:text-accent-light transition duration-150">Products</a></li>
+            <li><a href="services.html" class="hover:text-accent-light transition duration-150">Services</a></li>
+            <li><a href="contact.html" class="hover:text-accent-light transition duration-150">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Short Contact Info -->
+        <div class="md:col-span-4 space-y-4">
+          <h4 class="text-white font-semibold text-base">Our Office</h4>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Office 14, Soharwardi Road, Near Shalamar Town Post Office, Shalamar Town, Lahore, Pakistan.
+          </p>
+          <div class="text-sm space-y-1">
+            <p>Phone: <span class="text-white">+92-331-9796848</span></p>
+            <p>Email: <span class="text-white">mna.trading99@gmail.com</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-slate-700 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+        <p>© 2026 MNA Trading. All rights reserved.</p>
+        <p class="mt-4 md:mt-0">General Order Sourcing & Supply Solutions</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Mobile Navigation Toggle -->
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/923319796848?text=Hi%20MABCO%20Traders,%20I%20visited%20your%20website%20and%20want%20to%20inquire%20about%20wholesale%20supplies." 
+   target="_blank" 
+   class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:bg-[#128C7E] transition-all transform hover:scale-110 flex items-center justify-center animate-bounce"
+   aria-label="Chat on WhatsApp">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.458h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>

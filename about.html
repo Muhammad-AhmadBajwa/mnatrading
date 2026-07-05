@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - MNA Trading</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Copy and replace the tailwind.config block with this updated logo-matching version -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#314861', // Exact steel dark blue from inner circle
+              light: '#425f7f',
+              dark: '#1f2e3e',   // Extra dark variant for header/footer backgrounds
+            },
+            accent: {
+              DEFAULT: '#269bb0', // Exact vivid teal from the logo's outer ring
+              light: '#3bc4dc',   // Brighter teal for hover effects
+              dark: '#1a6d7c',   // Deeper teal for button active states
+            },
+            slateGray: {
+              DEFAULT: '#64748b',
+              light: '#f8fafc',
+              dark: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slateGray-dark flex flex-col min-h-screen">
+
+  <!-- Premium Announcement Bar with New Tagline -->
+<div class="bg-accent text-white text-[11px] sm:text-xs font-bold tracking-widest py-2.5 px-4 text-center shadow-sm relative z-50 uppercase">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
+    <span>Sourcing Made Simple — One Supplier, Every Category</span>
+    <span class="hidden sm:inline-block text-white/40">|</span>
+    <a href="contact.html" class="inline-flex items-center gap-1 underline hover:text-primary-dark transition duration-150 group">
+      Get Wholesale Pricing 
+      <span class="inline-block transition-transform duration-150 group-hover:translate-x-0.5">→</span>
+    </a>
+  </div>
+</div>
+
+  <!-- Header / Navigation -->
+  <header class="bg-primary-dark text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="index.html" class="flex items-center space-x-3">
+            <!-- Increased height from h-14 to h-16 for a larger display -->
+            <img src="logo.png" alt="MNA Trading Logo" class="h-16 w-auto object-contain transition duration-200 hover:opacity-90">
+            <!-- Text brought back next to the logo -->
+            <span class="text-2xl font-extrabold tracking-wider text-white">MNA TRADING</span>
+          </a>
+        </div>
+        <!-- Desktop Nav Links -->
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="index.html" class="text-gray-300 hover:text-white px-1 py-2 transition duration-150">Home</a>
+          <a href="about.html" class="text-accent-light border-b-2 border-accent-light px-1 py-2 transition duration-150">About Us</a>
+          <a href="products.html" class="text-gray-300 hover:text-white px-1 py-2 transition duration-150">Products</a>
+          <a href="services.html" class="text-gray-300 hover:text-white px-1 py-2 transition duration-150">Services</a>
+          <a href="contact.html" class="text-gray-300 hover:text-white px-1 py-2 transition duration-150">Contact Us</a>
+        </nav>
+        <!-- Desktop CTA -->
+        <div class="hidden md:block">
+          <a href="contact.html" class="bg-accent hover:bg-accent-dark text-white px-5 py-2.5 rounded-md text-sm font-semibold transition duration-150 shadow-sm">
+            Get a Quote
+          </a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none" aria-label="Toggle navigation">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu, hidden by default -->
+    <div id="mobile-menu" class="hidden md:hidden bg-primary px-4 pt-2 pb-4 space-y-1 shadow-inner">
+      <a href="index.html" class="block text-gray-300 hover:text-white py-2">Home</a>
+      <a href="about.html" class="block text-accent-light font-semibold py-2">About Us</a>
+      <a href="products.html" class="block text-gray-300 hover:text-white py-2">Products</a>
+      <a href="services.html" class="block text-gray-300 hover:text-white py-2">Services</a>
+      <a href="contact.html" class="block text-gray-300 hover:text-white py-2">Contact Us</a>
+      <a href="contact.html" class="block bg-accent hover:bg-accent-dark text-white text-center py-2.5 rounded-md mt-4 font-semibold">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- Page Header Title Section -->
+  <section class="bg-primary text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">About MNA Trading</h1>
+      <p class="mt-2 text-base text-accent-light">Learn more about our journey, strategic direction, and corporate values.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="flex-grow bg-white">
+    
+    <!-- Section 1: Our Journey (Updated with your Masterpiece Warehouse Image) -->
+    <section class="py-20 bg-white border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          
+          <!-- Left Text Column -->
+          <div class="lg:col-span-7 space-y-6">
+            <div>
+              <span class="inline-flex items-center gap-1.5 bg-slate-100 text-primary font-bold px-3 py-1 rounded-md text-xs uppercase tracking-wider">
+                Our Roots
+              </span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Our Journey</h2>
+            <div class="space-y-4 text-base text-slate-600 leading-relaxed">
+              <p>
+                MNA Trading was founded in Lahore with a simple, driven goal: to make wholesale sourcing streamlined, transparent, and completely dependable for retailers and businesses across Pakistan.
+              </p>
+              <p>
+                What started as a focused general order supply venture rapidly grew into a trusted partnership gateway for shopkeepers, independent retailers, and corporate buyers alike. We observed that enterprises were burning valuable operational hours chasing separate suppliers for distinct categories, so we engineered a singular, unified sourcing model.
+              </p>
+              <p>
+                Today, MNA Trading systematically supplies premium household goods, electronics accessories, industrial hardware, and FMCG products. Our operational blueprint remains anchored in absolute consistency, strict quality control, and an unyielding commitment to Pakistan's retail ecosystem.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Right Image Column (Updated with Masterpiece Warehouse Photo) -->
+          <div class="lg:col-span-5 relative">
+            <div class="absolute -inset-4 bg-gradient-to-tr from-accent/10 to-primary/5 rounded-3xl transform rotate-2 scale-95 blur-sm -z-10"></div>
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 bg-white p-2">
+              <img src="journey.jpg" alt="MNA Trading Premium Distribution Center Operations" class="w-full h-auto rounded-xl object-cover min-h-[350px]">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Strategic Direction -->
+    <section class="py-20 bg-slate-50/50 border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold uppercase tracking-widest text-accent bg-accent/10 px-3 py-1 rounded">Corporate Path</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3">Strategic Direction</h2>
+          <p class="mt-4 text-base text-slate-500 leading-relaxed">
+            Our framework is built to scale alongside your business operations seamlessly.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Mission Card -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-150 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between h-full">
+            <div>
+              <div class="w-12 h-12 bg-primary/5 text-accent rounded-xl flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138z"></path></svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Our Mission</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">
+                To be a foundational, elite general order supplier by providing strictly vetted products, highly competitive wholesale pricing matrices, and relentless logistics execution. We engineer simplicity into sourcing for businesses of every scale.
+              </p>
+            </div>
+          </div>
+
+          <!-- Vision Card -->
+          <div class="bg-white p-8 rounded-2xl border border-slate-150 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between h-full">
+            <div>
+              <div class="w-12 h-12 bg-primary/5 text-accent rounded-xl flex items-center justify-center mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Our Vision</h3>
+              <p class="text-sm text-slate-500 leading-relaxed">
+                To solidify our legacy as the benchmark name in corporate wholesale distribution across Pakistan, recognized for operational integrity and multi-year B2B relations. We want MNA Trading to be the secure asset network businesses trust, order after order.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Core Values -->
+    <section class="py-20 bg-white border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold uppercase tracking-widest text-accent bg-accent/10 px-3 py-1 rounded">Our Philosophy</span>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3">Our Core Values</h2>
+          <p class="mt-4 text-base text-slate-500">The standards and code of conduct that guide our logistics execution every day.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Value 1 -->
+          <div class="bg-slate-50/50 p-6 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-md transition duration-300 lg:h-48 flex flex-col justify-between">
+            <div>
+              <div class="text-accent mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              </div>
+              <h4 class="text-base font-extrabold text-slate-900 mb-2">Reliability</h4>
+              <p class="text-xs text-slate-500 leading-relaxed">We systematically deliver on our supply timeline promises, every single time.</p>
+            </div>
+          </div>
+
+          <!-- Value 2 -->
+          <div class="bg-slate-50/50 p-6 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-md transition duration-300 lg:h-48 flex flex-col justify-between">
+            <div>
+              <div class="text-accent mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"></path></svg>
+              </div>
+              <h4 class="text-base font-extrabold text-slate-900 mb-2">Integrity</h4>
+              <p class="text-xs text-slate-500 leading-relaxed">We execute wholesale trade with absolute, unyielding honesty and financial transparency.</p>
+            </div>
+          </div>
+
+          <!-- Value 3 -->
+          <div class="bg-slate-50/50 p-6 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-md transition duration-300 lg:h-48 flex flex-col justify-between">
+            <div>
+              <div class="text-accent mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path></svg>
+              </div>
+              <h4 class="text-base font-extrabold text-slate-900 mb-2">Customer Focus</h4>
+              <p class="text-xs text-slate-500 leading-relaxed">Our buyers' inventory targets and volume parameters dictate how we structure our operations.</p>
+            </div>
+          </div>
+
+          <!-- Value 4 -->
+          <div class="bg-slate-50/50 p-6 rounded-2xl border border-slate-200/60 shadow-sm hover:shadow-md transition duration-300 lg:h-48 flex flex-col justify-between">
+            <div>
+              <div class="text-accent mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"></path></svg>
+              </div>
+              <h4 class="text-base font-extrabold text-slate-900 mb-2">Consistency</h4>
+              <p class="text-xs text-slate-500 leading-relaxed">We protect stock quality parameters uniformly across single trial shipments or large volume orders.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NEW SECTION: CEO Leadership Message Section -->
+    <section class="py-20 bg-slate-50/50 border-b border-slate-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          
+          <!-- Left Image Column: CEO Headshot Slot -->
+          <div class="lg:col-span-5 relative order-2 lg:order-1">
+            <div class="absolute -inset-4 bg-gradient-to-tr from-accent/10 to-primary/5 rounded-3xl transform -rotate-2 scale-95 blur-sm -z-10"></div>
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 bg-white p-2">
+              <!-- Simply place your professional headshot picture file here named ceo.jpg -->
+              <img src="ceo.jpg" alt="MNA Trading Executive Leadership" class="w-full h-auto rounded-xl object-cover min-h-[380px] bg-slate-100">
+            </div>
+          </div>
+
+          <!-- Right Text Column: Executive Message Statement -->
+          <div class="lg:col-span-7 space-y-6 order-1 lg:order-2">
+            <div>
+              <span class="inline-flex items-center gap-1.5 bg-slate-100 text-accent font-bold px-3 py-1 rounded-md text-xs uppercase tracking-wider">
+                Leadership Message
+              </span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Message From The CEO</h2>
+            <div class="space-y-4 text-base text-slate-600 leading-relaxed">
+              <p>
+                At MNA Trading, our foundational objective is to eliminate the logistical fragmentation businesses face daily. True supply chain value is built on responsiveness, pricing protection, and consistent quality parameters.
+              </p>
+              <p>
+                We look forward to optimizing your business operations through absolute structural synergy, serving as your singular procurement gateway across every major wholesale category.
+              </p>
+            </div>
+            <div class="pt-2">
+              <h5 class="text-lg font-black text-slate-900">Mian Naveed Afzal</h5>
+              <p class="text-sm font-bold text-accent">Founder & CEO, MNA Trading</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Closing Note Statement -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative rounded-3xl bg-gradient-to-br from-primary to-primary-dark p-10 md:p-16 shadow-xl overflow-hidden text-white text-center">
+          <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:12px_12px]"></div>
+          
+          <div class="relative z-10 max-w-4xl mx-auto space-y-6">
+            <div class="inline-flex text-accent-light opacity-30">
+              <svg class="w-12 h-12 mx-auto" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+              </svg>
+            </div>
+            <blockquote class="text-xl sm:text-2xl font-medium italic leading-relaxed text-gray-100">
+              "When you partner with MNA Trading, you're choosing a supplier that values long-term relationships over one-time transactions. We're committed to earning your trust order after order. Let us be the reliable supply partner your business deserves."
+            </blockquote>
+            <div class="h-0.5 w-12 bg-accent mx-auto mt-6 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slateGray-dark text-gray-300 border-t border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <!-- Logo & Blurb -->
+        <div class="md:col-span-5 space-y-4">
+          <span class="text-xl font-bold tracking-wider text-white">MNA TRADING</span>
+          <p class="text-sm leading-relaxed text-gray-400">
+            MNA Trading — your reliable general order supplier in Lahore, connecting businesses to quality products across every essential category.
+          </p>
+          <p class="text-xs text-accent-light font-medium uppercase tracking-wider">
+            Trusted by retailers and businesses across Pakistan for reliable wholesale supply.
+          </p>
+        </div>
+        <!-- Quick Links -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="text-white font-semibold text-base">Navigation</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-accent-light transition duration-150">Home</a></li>
+            <li><a href="about.html" class="hover:text-accent-light transition duration-150">About Us</a></li>
+            <li><a href="products.html" class="hover:text-accent-light transition duration-150">Products</a></li>
+            <li><a href="services.html" class="hover:text-accent-light transition duration-150">Services</a></li>
+            <li><a href="contact.html" class="hover:text-accent-light transition duration-150">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Short Contact Info -->
+        <div class="md:col-span-4 space-y-4">
+          <h4 class="text-white font-semibold text-base">Our Office</h4>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Office 14, Soharwardi Road, Near Shalamar Town Post Office, Shalamar Town, Lahore, Pakistan.
+          </p>
+          <div class="text-sm space-y-1">
+            <p>Phone: <span class="text-white">+92-331-9796848</span></p>           
+            <p>Email: <span class="text-white">mna.trading99@gmail.com</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-slate-700 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+        <p>© 2026 MNA Trading. All rights reserved.</p>
+        <p class="mt-4 md:mt-0">General Order Sourcing & Supply Solutions</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Mobile Navigation Toggle -->
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/923319796848?text=Hi%20MABCO%20Traders,%20I%20visited%20your%20website%20and%20want%20to%20inquire%20about%20wholesale%20supplies." 
+   target="_blank" 
+   class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:bg-[#128C7E] transition-all transform hover:scale-110 flex items-center justify-center animate-bounce"
+   aria-label="Chat on WhatsApp">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.458h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>

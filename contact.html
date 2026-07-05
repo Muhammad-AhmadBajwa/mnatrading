@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - MNA Trading</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Copy and replace the tailwind.config block with this updated logo-matching version -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#314861', // Exact steel dark blue from inner circle
+              light: '#425f7f',
+              dark: '#1f2e3e',   // Extra dark variant for header/footer backgrounds
+            },
+            accent: {
+              DEFAULT: '#269bb0', // Exact vivid teal from the logo's outer ring
+              light: '#3bc4dc',   // Brighter teal for hover effects
+              dark: '#1a6d7c',   // Deeper teal for button active states
+            },
+            slateGray: {
+              DEFAULT: '#64748b',
+              light: '#f8fafc',
+              dark: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slateGray-dark flex flex-col min-h-screen">
+
+  <!-- Premium Announcement Bar with New Tagline -->
+<div class="bg-accent text-white text-[11px] sm:text-xs font-bold tracking-widest py-2.5 px-4 text-center shadow-sm relative z-50 uppercase">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
+    <span>Sourcing Made Simple — One Supplier, Every Category</span>
+    <span class="hidden sm:inline-block text-white/40">|</span>
+    <a href="contact.html" class="inline-flex items-center gap-1 underline hover:text-primary-dark transition duration-150 group">
+      Get Wholesale Pricing 
+      <span class="inline-block transition-transform duration-150 group-hover:translate-x-0.5">→</span>
+    </a>
+  </div>
+</div>
+
+  <!-- Header / Navigation -->
+  <header class="bg-primary-dark text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+       <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="index.html" class="flex items-center space-x-3">
+            <!-- Increased height from h-14 to h-16 for a larger display -->
+            <img src="logo.png" alt="MNA Trading Logo" class="h-16 w-auto object-contain transition duration-200 hover:opacity-90">
+            <!-- Text brought back next to the logo -->
+            <span class="text-2xl font-extrabold tracking-wider text-white">MNA TRADING</span>
+          </a>
+        </div>
+        <!-- Desktop Nav Links -->
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="index.html" class="text-gray-300 hover:text-white px-1 py-2 transition duration-150">Home</a>
+          <a href="about.html" class="text-gray-300 hover:text-white px-1 py-2 transition duration-150">About Us</a>
+          <a href="products.html" class="text-gray-300 hover:text-white px-1 py-2 transition duration-150">Products</a>
+          <a href="services.html" class="text-gray-300 hover:text-white px-1 py-2 transition duration-150">Services</a>
+          <a href="contact.html" class="text-accent-light border-b-2 border-accent-light px-1 py-2 transition duration-150">Contact Us</a>
+        </nav>
+        <!-- Desktop CTA -->
+        <div class="hidden md:block">
+          <a href="contact.html" class="bg-accent hover:bg-accent-dark text-white px-5 py-2.5 rounded-md text-sm font-semibold transition duration-150 shadow-sm">
+            Get a Quote
+          </a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none" aria-label="Toggle navigation">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu, hidden by default -->
+    <div id="mobile-menu" class="hidden md:hidden bg-primary px-4 pt-2 pb-4 space-y-1 shadow-inner">
+      <a href="index.html" class="block text-gray-300 hover:text-white py-2">Home</a>
+      <a href="about.html" class="block text-gray-300 hover:text-white py-2">About Us</a>
+      <a href="products.html" class="block text-gray-300 hover:text-white py-2">Products</a>
+      <a href="services.html" class="block text-gray-300 hover:text-white py-2">Services</a>
+      <a href="contact.html" class="block text-accent-light font-semibold py-2">Contact Us</a>
+      <a href="contact.html" class="block bg-accent hover:bg-accent-dark text-white text-center py-2.5 rounded-md mt-4 font-semibold">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- Page Header Title Section -->
+  <section class="bg-primary text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Contact Us</h1>
+      <p class="mt-2 text-base text-accent-light">Let's Start a Conversation. Get in touch with our Lahore office today.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="flex-grow">
+    
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- Column 1: Business Inquiry Form (Span 7) -->
+          <div class="lg:col-span-7 bg-slate-50 p-8 rounded-lg border border-slate-100 shadow-sm">
+            <h2 class="text-2xl font-bold text-primary-dark mb-2">Business Inquiry Form</h2>
+            <p class="text-sm text-slateGray mb-6">Complete the form below to share your requirements, and our sales team will reach out directly.</p>
+            
+            <form action="#" method="POST" class="space-y-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Full Name -->
+                <div>
+                  <label for="fullname" class="block text-sm font-semibold text-slateGray-dark mb-2">Full Name</label>
+                  <input type="text" id="fullname" name="fullname" required class="w-full px-4 py-2.5 rounded border border-gray-300 bg-white focus:ring-2 focus:ring-primary focus:outline-none transition text-sm">
+                </div>
+                <!-- Business Name -->
+                <div>
+                  <label for="businessname" class="block text-sm font-semibold text-slateGray-dark mb-2">Business Name (Optional)</label>
+                  <input type="text" id="businessname" name="businessname" class="w-full px-4 py-2.5 rounded border border-gray-300 bg-white focus:ring-2 focus:ring-primary focus:outline-none transition text-sm">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Phone Number -->
+                <div>
+                  <label for="phone" class="block text-sm font-semibold text-slateGray-dark mb-2">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2.5 rounded border border-gray-300 bg-white focus:ring-2 focus:ring-primary focus:outline-none transition text-sm">
+                </div>
+                <!-- Email Address -->
+                <div>
+                  <label for="email" class="block text-sm font-semibold text-slateGray-dark mb-2">Email Address</label>
+                  <input type="email" id="email" name="email" required class="w-full px-4 py-2.5 rounded border border-gray-300 bg-white focus:ring-2 focus:ring-primary focus:outline-none transition text-sm">
+                </div>
+              </div>
+
+              <!-- Product Category Dropdown Selector -->
+              <div>
+                <label for="category" class="block text-sm font-semibold text-slateGray-dark mb-2">Product Category</label>
+                <select id="category" name="category" required class="w-full px-4 py-2.5 rounded border border-gray-300 bg-white focus:ring-2 focus:ring-primary focus:outline-none transition text-sm">
+                  <option value="" disabled selected>Select a Product Category</option>
+                  <option value="Household & Consumer Goods">Household & Consumer Goods</option>
+                  <option value="Electronics Accessories">Electronics Accessories</option>
+                  <option value="Hardware & Industrial Supplies">Hardware & Industrial Supplies</option>
+                  <option value="FMCG">FMCG</option>
+                  <option value="Other / Custom Sourcing">Other / Custom Sourcing</option>
+                </select>
+              </div>
+
+              <!-- Message / Inquiry Details -->
+              <div>
+                <label for="message" class="block text-sm font-semibold text-slateGray-dark mb-2">Message / Inquiry Details</label>
+                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2.5 rounded border border-gray-300 bg-white focus:ring-2 focus:ring-primary focus:outline-none transition text-sm" placeholder="Please describe your specific bulk sourcing or general order requirements..."></textarea>
+              </div>
+
+              <!-- Button -->
+              <div>
+                <button type="submit" class="w-full bg-accent hover:bg-accent-dark text-white font-bold py-3.5 px-6 rounded shadow-md transition duration-150">
+                  Send Inquiry
+                </button>
+              </div>
+            </form>
+
+            <!-- Response Time Note -->
+            <div class="mt-8 bg-amber-50 border-l-4 border-accent p-4 rounded-r">
+              <p class="text-sm text-slateGray-dark leading-relaxed font-medium">
+                <strong>Please Note:</strong> We typically respond to inquiries within 24 hours. For urgent queries, feel free to reach us directly via phone or WhatsApp Business.
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 2: Contact Details Only (Right Side) -->
+          <div class="lg:col-span-5">
+            <div class="bg-primary text-white p-8 rounded-lg shadow-sm border border-primary-dark/20">
+              <h2 class="text-2xl font-bold mb-6">Contact Details</h2>
+              
+              <ul class="space-y-6 text-sm">
+                <!-- Address -->
+                <li class="flex items-start">
+                  <div class="flex-shrink-0 text-accent-light mt-1">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="font-bold text-base text-accent-light mb-1">Office Address</h4>
+                    <p class="text-gray-200 leading-relaxed">
+                      Office 14, Soharwardi Road, Near Shalamar Town Post Office, Shalamar Town, Lahore, Pakistan
+                    </p>
+                  </div>
+                </li>
+
+                <!-- Phone -->
+                <li class="flex items-start">
+                  <div class="flex-shrink-0 text-accent-light mt-1">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="font-bold text-base text-accent-light mb-1">Phone</h4>
+                    <p class="text-gray-200 text-lg font-semibold">+92-331-9796848</p>
+                  </div>
+                </li>
+
+                <!-- Email -->
+                <li class="flex items-start">
+                  <div class="flex-shrink-0 text-accent-light mt-1">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="font-bold text-base text-accent-light mb-1">Email</h4>
+                    <p class="text-gray-200 text-base font-semibold">mna.trading99@gmail.com</p>
+                  </div>
+                </li>
+
+                <!-- Web -->
+                <li class="flex items-start">
+                  <div class="flex-shrink-0 text-accent-light mt-1">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="font-bold text-base text-accent-light mb-1">Web</h4>
+                    <p class="text-gray-200 text-base font-semibold">www.mnatrading.pk</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slateGray-dark text-gray-300 border-t border-slate-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <!-- Logo & Blurb -->
+        <div class="md:col-span-5 space-y-4">
+          <span class="text-xl font-bold tracking-wider text-white">MNA TRADING</span>
+          <p class="text-sm leading-relaxed text-gray-400">
+            MNA Trading — your reliable general order supplier in Lahore, connecting businesses to quality products across every essential category.
+          </p>
+          <p class="text-xs text-accent-light font-medium uppercase tracking-wider">
+            Trusted by retailers and businesses across Pakistan for reliable wholesale supply.
+          </p>
+        </div>
+        <!-- Quick Links -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="text-white font-semibold text-base">Navigation</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-accent-light transition duration-150">Home</a></li>
+            <li><a href="about.html" class="hover:text-accent-light transition duration-150">About Us</a></li>
+            <li><a href="products.html" class="hover:text-accent-light transition duration-150">Products</a></li>
+            <li><a href="services.html" class="hover:text-accent-light transition duration-150">Services</a></li>
+            <li><a href="contact.html" class="hover:text-accent-light transition duration-150">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Short Contact Info -->
+        <div class="md:col-span-4 space-y-4">
+          <h4 class="text-white font-semibold text-base">Our Office</h4>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Office 14, Soharwardi Road, Near Shalamar Town Post Office, Shalamar Town, Lahore, Pakistan.
+          </p>
+          <div class="text-sm space-y-1">
+            <p>Phone: <span class="text-white">+92-331-9796848</span></p>
+            <p>Email: <span class="text-white">mna.trading99@gmail.com</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-slate-700 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+        <p>© 2026 MNA Trading. All rights reserved.</p>
+        <p class="mt-4 md:mt-0">General Order Sourcing & Supply Solutions</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Mobile Navigation Toggle -->
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/923319796848?text=Hi%20MABCO%20Traders,%20I%20visited%20your%20website%20and%20want%20to%20inquire%20about%20wholesale%20supplies." 
+   target="_blank" 
+   class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:bg-[#128C7E] transition-all transform hover:scale-110 flex items-center justify-center animate-bounce"
+   aria-label="Chat on WhatsApp">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.458h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+</a>
